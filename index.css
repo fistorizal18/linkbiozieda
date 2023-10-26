@@ -1,0 +1,99 @@
+/* Font Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: red;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 4rem;
+  gap: 1rem;
+  text-align: center;
+}
+
+.logo-zieda {
+  width: 10rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.sosmed i {
+  font-size: 1.5rem;
+}
+
+.sosmed a:not(:last-child) {
+  margin-right: 1rem;
+}
+
+ul {
+  width: 80%;
+  max-width: 40rem;
+}
+
+ul li {
+  list-style: none;
+}
+
+ul.menu-kami li:not(:last-child),
+ul.wa-kami li:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+ul.menu-kami .link-card,
+ul.wa-kami .link-card {
+  color: black;
+  align-items: center;
+  display: flex;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 20px;
+  justify-content: space-between;
+  box-shadow: 8px 10px 0 rgba(0, 0, 0, 0.5);
+  border: 2px solid white;
+}
+
+.menu-kami .link-icon {
+  background-image: linear-gradient(to top, yellow, #b99e00);
+  padding: 0.5rem;
+  border-radius: 10px;
+  aspect-ratio: 1/1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wa-kami .link-icon {
+  background-color: green;
+  padding: 0.5rem;
+  border-radius: 10px;
+  aspect-ratio: 1/1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-kami .link-icon i,
+.wa-kami .link-icon i {
+  color: white;
+}
+
+.menu-kami .link-action,
+.wa-kami .link-action {
+  color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+.menu-kami .link-card:hover,
+.wa-kami .link-card:hover {
+  border: 2px solid black;
+}
