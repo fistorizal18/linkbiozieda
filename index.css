@@ -97,3 +97,9 @@ ul.wa-kami .link-card {
 .wa-kami .link-card:hover {
   border: 2px solid black;
 }
+
+/* MENU HTML CSS */
+.card {
+  display: flex;
+  flex-wrap: wrap;
+}

@@ -1,0 +1,74 @@
+/* Font Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: red;
+  color: white;
+}
+
+.header-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  margin: 80px;
+  align-items: center;
+  grid-gap: 30px;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+.card-container .card-menu {
+  box-shadow: 5px 5px 5px 5px black;
+  border-radius: 10px;
+  text-align: center;
+  align-items: center;
+  background: white;
+  color: black;
+  width: 300px;
+  transition: transform;
+}
+
+.card-container .card-menu img {
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  /* width: 100%; */
+}
+
+/* .card-harga {
+    text-transform: uppercase;
+    cursor: progress;
+} */
+
+.card-container .card-menu:hover {
+  /* transform: rotate(15deg);
+    transform: scale(0.5); */
+  transform: scale(1.2);
+  /* transform: translate(50px); *geser* */
+}
+
+@media (max-width: 1000px) {
+  .card-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 760px) {
+  .card-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
