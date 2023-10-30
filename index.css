@@ -55,10 +55,10 @@ ul.wa-kami .link-card {
   align-items: center;
   display: flex;
   background-color: white;
-  padding: 1rem;
+  padding: 0.1rem;
   border-radius: 20px;
   justify-content: space-between;
-  box-shadow: 8px 10px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 3px 5px 0 rgba(0, 0, 0, 0.5);
   border: 2px solid white;
 }
 
