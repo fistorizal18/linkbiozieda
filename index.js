@@ -1,14 +1,27 @@
-const icon = document.querySelector(".icon");
+const liProduct = document.querySelectorAll("ul li");
+const card = document.querySelectorAll(".card-menu");
 
-icon.addEventListener("click", () => {
-  const link = icon.querySelector("a");
-  if (link) {
-    const textArea = document.createElement("textarea");
-    textArea.value = link.getAttribute("href");
-    document.body.appendChild(textArea);
-    textArea.select();
-    document.execCommand("copy");
-    document.body.removeChild(textArea);
-    alert("Link telah disalin ke clipboard.");
-  }
+liProduct.forEach((li) => {
+  li.onclick = function () {
+    liProduct.forEach((li) => {
+      // MENGHAPUS SEMUA KELAS CURRENT PADA ELEMENT LI
+      li.classList.remove("current");
+    });
+    li.classList.add("current");
+
+    // FITUR FILTER
+
+    // MENGAMBIL ATAU MENYEMBUNYIKAN ELEMEN CARD-MENU BERDASARKAN NILAI FILTERVALUE
+    const filterValue = li.getAttribute("data-filter");
+
+    card.forEach((card) => {
+      const cardFilter = card.getAttribute("data-filter");
+
+      if (filterValue === "semua-menu" || filterValue === cardFilter) {
+        card.style.display = "block";
+      } else {
+        card.style.display = "none";
+      }
+    });
+  };
 });

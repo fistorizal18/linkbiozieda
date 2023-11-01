@@ -7,24 +7,21 @@
     <link rel="stylesheet" href="menu.css" />
   </head>
   <body>
-    <div class="header-menu">
-      <div class="title">
-        <h1>MENU</h1> 
+    <!-- HEADER SECTION -->
+    <section class="menu-paketan">
+      <h1>MENU PAKETAN</h1>
+        <ul class="ul">
+          <li class="current" data-filter="semua-menu">SEMUA MENU</li>
+          <li data-filter="paketan-roti">PAKETAN ROTI</li>
+          <li data-filter="snack-box">SNACK BOX</li>
+          <li data-filter="nasi-box">NASI BOX</li>
+        </ul>
       </div>
-      <div class="list">
-          <li>PAKETAN REGULAR</li>
-          <li>PAKETAN PREMIUM</li>
-          <li>NASI BOX</li>
-          <li>SNACK BOX</li>
-          <li>KUE ULANG TAHUN ANAK</li>
-          <li>KUE ULANG TAHUN DEWASA</li>
-          <li>KUE ULANG TAHUN PERNIKAHAN</li>
-      </div>
-    </div>
+    
 
-
+    <!-- CARD SECTION -->
     <div class="card-container">
-      <div class="card-menu">
+      <div class="card-menu" data-filter="paketan-roti">
         <img src="img/paketan/1.png" height="150" alt="" />
         <div class="card-harga">
           <h2>Rp 13.000</h2>
@@ -64,7 +61,7 @@
         </div>
         <a href="index.html" class="btn">ORDER SEKARANG</a>
       </div>
-      <div class="card-menu">
+      <div class="card-menu" >
         <img src="img/paketan/6.png" height="150" alt="" />
         <div class="card-harga">
           <h2>Rp 13.500</h2>
@@ -96,7 +93,7 @@
         </div>
         <a href="index.html" class="btn">ORDER SEKARANG</a>
       </div>
-      <div class="card-menu">
+      <div class="card-menu" data-filter="snack-box">
         <img src="img/paketan/10.png" height="150" alt="" />
         <div class="card-harga">
           <h2>Rp 14.000</h2>
@@ -105,5 +102,7 @@
         <a href="index.html" class="btn">ORDER SEKARANG</a>
       </div>
     </div>
+  </section>
+    <script src="index.js"></script>
   </body>
 </html>
