@@ -132,6 +132,33 @@ body {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
+
+/* menu pagination */
+.listPage {
+  padding: 10px;
+  text-align: center;
+  list-style: none;
+}
+
+.listPage li {
+ background-color: white;
+ padding: 15px;
+ display: inline-block;
+ margin: 0 10px;
+ cursor: pointer;
+}
+
+.listPage .active {
+  background-color: gold;
+  color: white;
+}
+
+
+
+
+
+
+
 @media (max-width: 1280px) {
   .card-container {
     grid-template-columns: repeat(5, 1fr);
