@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu Zieda Bakery And Cakes</title>
+    <link rel="stylesheet" href="menu.css" />
+  </head>
+  <body>
+    <!-- HEADER SECTION -->
+    <section class="menu-paketan">
+      <h1>MENU PAKETAN</h1>
+      <ul class="ul">
+        <li class="current" data-filter="paketan-regular">PAKETAN ROTI REGULAR</li>
+        <li data-filter="paketan-premium">PAKET ROTI PREMIUM</li>
+      </ul>
+    </section>
+
+    <!-- CARD SECTION -->
+    <div class="card-container" id="cardContainer">
+      <!-- Card menus will be generated here -->
+    </div>
+
+    <script>
+      // Data berisi array objek untuk menu
+      var menuData = [
+        {
+          filter: "paketan-regular",
+          imgSrc: "img/paketan/1.png",
+          harga: "Rp 13.000",
+          deskripsi: "Coklat Keju Jumbo, Batik Iris, Donat Meises, Selai Wijen",
+          link: "index.html",
+        },
+        {
+          filter: "paketan-regular",
+          imgSrc: "img/paketan/2.png",
+          harga: "Rp 13.000",
+          deskripsi: "Bolu Batik pandan, Donat Meises, Selai Cup, Topping Kering",
+          link: "index.html",
+        },
+        // Tambahkan data lainnya
+      ];
+
+      // Ambil elemen cardContainer
+      var cardContainer = document.getElementById("cardContainer");
+
+      // Loop melalui data dan buat card menu untuk setiap objek
+      menuData.forEach(function (item) {
+        var cardMenu = document.createElement("div");
+        cardMenu.classList.add("card-menu");
+        cardMenu.setAttribute("data-filter", item.filter);
+
+        var img = document.createElement("img");
+        img.src = item.imgSrc;
+        img.height = 150;
+        img.alt = "";
+
+        var cardHarga = document.createElement("div");
+        cardHarga.classList.add("card-harga");
+
+        var h2 = document.createElement("h2");
+        h2.textContent = item.harga;
+
+        var p = document.createElement("p");
+        p.textContent = item.deskripsi;
+
+        var a = document.createElement("a");
+        a.href = item.link;
+        a.textContent = "ORDER SEKARANG";
+        a.classList.add("btn");
+
+        cardHarga.appendChild(h2);
+        cardHarga.appendChild(p);
+        cardMenu.appendChild(img);
+        cardMenu.appendChild(cardHarga);
+        cardMenu.appendChild(a);
+        cardContainer.appendChild(cardMenu);
+      });
+    </script>
+  </body>
+</html>
