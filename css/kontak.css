@@ -1,0 +1,106 @@
+/* Font Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: red;
+}
+
+.kontak {
+  width: 85%;
+  margin: 50px auto;
+}
+
+.kontak h1 {
+  text-align: center;
+  color: white;
+  font-size: 40px;
+  margin: 20px 0;
+}
+
+.kontak .ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  border-bottom: 1px solid yellow;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  color: black;
+}
+
+.kontak .ul li {
+  list-style: none;
+  text-align: center;
+  width: 300px;
+  padding: 9px 25px;
+  background: white;
+  cursor: pointer;
+  margin: 7px 10px;
+  font-size: 20px;
+  font-weight: 300;
+  border-radius: 15px;
+}
+
+.kontak .ul li:hover {
+  background: yellow;
+}
+
+.kontak .ul li.current {
+  background: yellow;
+  font-weight: 600;
+}
+
+.kontak .ul li.current:hover {
+  background: yellow;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.card-informasi  {
+  display: flex;
+  font-size: 15px;
+  flex-direction: column;
+  box-shadow: 5px 5px 5px 5px black;
+  border-radius: 10px;
+  text-align: center;
+  align-items: center;
+  background: white;
+  color: black;
+  width: 200px;
+  max-width: 100%;
+  padding-bottom: 10px;
+}
+
+.card-informasi h2 {
+    padding: 10px;
+    width: 200px;
+    height: 80px;
+    background: gold;
+    color: black;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card-informasi .btn {
+    text-decoration: none;
+    display: flex;
+    background: green;
+    flex-direction: column;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px 1px black;
+}
