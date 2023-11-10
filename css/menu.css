@@ -10,22 +10,93 @@
 body {
   font-family: "Poppins", sans-serif;
   background: red;
+  overflow-x: hidden;
 }
-.navbar {
+
+a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+a:hover {
+  color: black;
+}
+
+/* header {
+  width: 100vw;
+  height: 100px;
+  background-color: white;
+  box-shadow: 0px 3px 8px rgb(0, 0, 0, 25%);
   display: flex;
-  justify-content: center;
-  text-align: center;
   align-items: center;
+  padding: 10px 30px;
 }
-.navbar-nav .nav-item:hover {
-  background-color: #f8f9fa; /* Warna latar belakang saat hover */
+
+header .container-fluid {
+  width: 100%;
+  padding: 0 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-.navbar-nav .nav-link:hover {
-  color: #007bff; /* Warna teks saat hover */
+
+header .navb-logo img{
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
 }
+
+header .navb-items {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  letter-spacing: 3px;
+}
+
+header .item {
+  text-align: center;
+  margin-inline: 15%;
+  font-size: 15px;
+  letter-spacing: 3px;
+  color: gold;
+  padding: 5px 0;
+  transition: all .1s ease;
+  border-bottom: 0px solid black;
+  border-top: 0px solid black;
+  cursor: pointer;
+}
+
+header .item:hover {
+  border-bottom:  3px solid black;
+  border-top:  3px solid black;
+}
+
+header .item-button a{
+ background-color: gold;
+ width: 150px;
+ height: 50px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ font-size: 16px;
+ color: white;
+ transition: all .5s ease;
+}
+
+header .item-button a:hover {
+  background-color: black;
+}
+ */
+
+
+
+
 .menu-paketan {
   width: 85%;
   margin: 50px auto;
+  background: red;
 }
 
 .menu-paketan h1 {
