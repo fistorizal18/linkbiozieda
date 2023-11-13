@@ -10,6 +10,29 @@
 body {
   font-family: "Poppins", sans-serif;
   background: red;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+a:hover {
+  color: black;
+}
+
+
+.bg {
+  background-color: white;
+}
+
+.navbar {
+  padding: 0;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
 }
 
 .kontak {
@@ -67,7 +90,7 @@ body {
   gap: 50px;
 }
 
-.card-informasi  {
+.card-informasi {
   display: flex;
   font-size: 15px;
   flex-direction: column;
@@ -83,24 +106,71 @@ body {
 }
 
 .card-informasi h2 {
-    padding: 10px;
-    width: 200px;
-    height: 80px;
-    background: gold;
-    color: black;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+  padding: 10px;
+  width: 200px;
+  height: 80px;
+  font-size: 20px;
+  background: gold;
+  color: black;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 .card-informasi .btn {
-    text-decoration: none;
-    display: flex;
-    background: green;
-    flex-direction: column;
-    margin: 10px;
-    padding: 10px;
-    border-radius: 10px;
-    color: white;
-    cursor: pointer;
-    box-shadow: 1px 1px 1px 1px black;
+  text-decoration: none;
+  display: flex;
+  background: green;
+  flex-direction: column;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px 1px black;
+}
+
+.sosmed {
+display: flex;
+justify-content: center;
+padding-top: 50px;
+color: white;
+align-items: center;
+text-align: center;
+}
+.sosmed i {
+  font-size: 2rem;
+  color: white;
+}
+.sosmed p {
+  font-size: 1.5rem;
+  color: white;
+  font-weight: 600;
+}
+.sosmed a:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.pembuat {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10px;
+}
+
+.pembuat a{
+ color: white;
+}
+
+.pembuat a:hover{
+ color: black;
+}
+
+
+@media (max-width: 768px) {
+  .card-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .ul-bg {
+    background-color: gold;
+  }
 }

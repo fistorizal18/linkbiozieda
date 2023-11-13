@@ -5,34 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kontak dan Alamat</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="fontawesome/fontawesome-free-6.4.2-web/css/all.css">
     <link rel="stylesheet" href="/css/kontak.css">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
 </head>
 <body>
 
 
-  <nav class="navbar navbar-light bg-light">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="index.html">
-        <img src="img/LOGO ZIEDA.png" alt="" width="60" height="30" class="d-inline-block align-text-top">
-      </a>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-              <a class="nav-link active" aria-current="page" href="index.html">Beranda</a>
-              <a class="nav-link active" aria-current="page" href="#">Menu Nasi Box</a>
-              <a class="nav-link active" aria-current="page" href="menu.html">Menu Paketan</a>
-              <a class="nav-link active" aria-current="page" href="#">Menu Snack Box</a>
-              <a class="nav-link active" aria-current="page" href="Kontak.html">Kontak dan Lokasi</a>
-            </div>
-          </div>
-        </div>
-      </nav>
+  <!-- NAVBAR START -->
+
+  <nav class="navbar navbar-expand-md bg">
+    <a href="/index.html" class="navbar-brand fs-3 ms-3"><img src="img/LOGO ZIEDA1.png" height="50px" alt=""> Zieda Bakery And Cakes</a>
+  
+    <button class="navbar-toggler me-3" type="button" data-bs-toggle="collapse" data-bs-target="#btn">
+      <i class="fa-solid fa-bars bx-md"></i>
+    </button>
+  
+    <div class="collapse navbar-collapse ul-bg" id="btn">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a href="index.html" class="nav-link mx-3 fs-4">BERANDA</a>
+        </li>
+        <li class="nav-item">
+          <a href="menu.html" class="nav-link mx-3 fs-4">PAKETAN ROTI</a>
+        </li>
+        <li class="nav-item">
+          <a href="Kontak.html" class="nav-link mx-3 fs-4">KONTAK</a>
+        </li>
+      </ul>
     </div>
   </nav>
+  
+
+  
+  <!-- NAVBAR END -->
+
     
 <!-- HEADER SECTION -->
 <section class="kontak">
@@ -183,9 +190,29 @@
         
             
     </div>
+
+    <!-- FOOTER -->
+<section class="footer">
+  <div class="sosmed">
+    <a href="https://instagram.com/ziedabakery_id" target="_blank">
+      <i class="ph-duotone ph-instagram-logo"></i>
+    </a>
+    <a href="https://www.tiktok.com/@ziedabakery_id" target="_blank">
+      <i class="ph-duotone ph-tiktok-logo"></i>
+    </a>
+    <a href="https://www.facebook.com/ziedabakeryid/" target="_blank">
+      <i class="ph-duotone ph-facebook-logo"></i>
+    </a>
+    <p>@ziedabakery_id</p>
+  </div>
+  <div class="pembuat">
+    <p>Created by <span><a href="">@fistofaathir</a></span></p>
+  </div>
+</section>
+    
  
 <script src="kontak.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-</body>
+
 </body>
 </html>

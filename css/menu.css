@@ -4,7 +4,7 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
 }
 
 body {
@@ -21,6 +21,21 @@ a {
 a:hover {
   color: black;
 }
+
+.bg {
+  background-color: white;
+}
+
+.navbar {
+  padding: 0;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+
+
 
 /* header {
   width: 100vw;
@@ -247,8 +262,11 @@ header .item-button a:hover {
   }
 }
 
-@media (max-width: 760px) {
+@media (max-width: 768px) {
   .card-container {
     grid-template-columns: repeat(1, 1fr);
+  }
+  .ul-bg {
+    background-color: gold;
   }
 }
